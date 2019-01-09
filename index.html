@@ -21,7 +21,6 @@
 		}
 
 		header {
-			
 			margin-top: 60px;
 		}
 
@@ -29,10 +28,6 @@
 			clear: both;
 		}
 		
-		.left {
-			float: left;
-		}
-
 		.right {
 			float: right;
 		}
@@ -60,25 +55,27 @@
 			background: white;
 			margin-top: 10px;
 			padding: 15px;
+			overflow: hidden;
 		}
 
-		nav {
+		.mainMenu {
 			background: black;
 			height: 55px;
+			margin-bottom: 15px;
 		}
 
-		main nav ul {
+		.mainMenu ul {
 			display: flex;
 			list-style-type: none;
 			line-height: 55px;
 			text-align: center;
 		}
 
-		main nav ul li {
+		.mainMenu ul li {
 			flex: 1;
 		}
 
-		main nav ul li a {
+		.mainMenu ul li a {
 			display: block;
 			color: white;
 			text-decoration: none;
@@ -87,8 +84,63 @@
 			font-size: 12px;
 		}
 
-		main nav ul li a:hover {
+		.mainMenu ul li a:hover {
 			background: #1B3039;
+		}
+
+		aside {
+			width: 300px;
+			margin-top: 15px;
+		}
+
+		aside div{
+			background: #EFEDE5;
+			margin-bottom: 20px;
+			padding: 1px;
+		}
+
+		aside div h4 {
+			padding-left: 15px;
+			line-height: 2em;
+			background: #5D9EBD;
+			margin: 10px;
+			font-size: 1.1em;
+			color: white;
+		}
+
+		.box ul {
+			list-style-type: none;
+			padding: 0 20px;
+		}
+
+		.box ul li {
+			margin: 10px 0;
+			border-bottom: 1px solid #E8E6DE;
+			padding: 3px 0;
+		}
+
+		.box ul li a {
+			font-size: 13px;
+			text-decoration: none;
+			color: #96AE3E;
+			font-weight: 700;
+		}
+
+		.box p {
+			padding: 15px 20px;
+			font-size: 13px;
+			line-height: 25px;
+			color: #464646;
+		}
+
+		.content {
+			float: left;
+			width: 570px;
+		}
+
+
+		.active {
+			background:  #1B3039;
 		}
 
 	</style>
@@ -100,16 +152,54 @@
 			<p class="right">template designed by webtemplateocean.com</p>
 		</header>
 		<main>
-			<nav>
+			<nav class="mainMenu">
 				<ul>
-					<li><a href="#">Home</a></li>
+					<li><a class="active" href="#">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Gallery</a></li>
 					<li><a href="#">Help</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
+			<figure>
+				<img src="image.jpg" alt="">
+			</figure>
+			
+			<aside class="right">
+				<div class="box">
+					<h4>Saepe repellendus</h4>
+					<nav>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor.</a></li>
+							<li><a href="#">Saepe repellendus, veniam!</a></li>
+							<li><a href="#">Repellendus laborum, sequi.</a></li>
+							<li><a href="#">Inventore laudantium, eos!</a></li>
+							<li><a href="#">Voluptate, ea, quaerat.</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="box">
+					<h4>Integer rhoncus</h4>
+					<p>Mauris sollicitudin tincidunt magna vitae semper. Curabitur ut pharetra quam. Integer rhoncus convallis urna vitae mattis. Sed pharetra massa ac metus fermentum et iaculis enim accumsan.</p>
+				</div>
+				<div class="box">
+					<h4>Integer rhoncus</h4>
+					<nav>
+						<ul>
+							<li><a href="#">Suspendisse faucibus purus</a></li>
+							<li><a href="#">Tincidunt nec accumsan</a></li>
+							<li><a href="#">Fusce laoreet, ligula et rhoncus</a></li>
+							<li><a href="#">Adipiscing gravida pulvinar eget</a></li>
+							<li><a href="#">Cras consectetur commodo</a></li>
+						</ul>
+					</nav>
+				</div>
+			</aside>
+			<div class="content">
+				<h1>terms of use</h1>
+			</div>
 		</main>
+		
 	</div>
 	
 </body>
